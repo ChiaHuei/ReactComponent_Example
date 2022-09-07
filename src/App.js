@@ -12,6 +12,7 @@ export default function App() {
   return (
     <div className="App">
       <h1>ReactComponent基本概念</h1>
+      <hr />
       <h3>Timer(Class-based component)</h3>
       <TimerOne />
       <hr />
@@ -30,3 +31,6 @@ export default function App() {
   );
 }
 
+// 更新 React Element 有幾種方式:
+// 1. 每次都重新建立一個新的 React Element，然後透過再次呼叫 ReactDOM.render() 方法更新畫面。
+// 2. 透過更新 state 中的資料更新畫面。
