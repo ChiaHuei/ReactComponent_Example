@@ -9,6 +9,7 @@ import TimerOne from "./TimerOne";
 import TimerTwo from "./TimerTwo";
 import Person from "./Person/Person";
 import TimerReactExampleOne from "./TimerReactExampleOne";
+import UpdateTime from "./UpdateTime";
 
 export default function App() {
   return (
@@ -28,18 +29,17 @@ export default function App() {
       <hr />
 
       <h3>Function component Two</h3>
-      <WelcomeTwo name="Sara">我 4 Children!</WelcomeTwo>
+      <WelcomeTwo name="Sara">我是 Children!</WelcomeTwo>
 
       <hr size="4" color="blue" ></hr>
 
-      <h3>Timer(Class-based component)</h3>
+      {/* <h3>Timer(Class-based component)</h3>
       <TimerOne />
-      <hr />
+      <hr /> */}
 
-      <h3>Timer(Function component)</h3>
+      {/* <h3>Timer(Function component)</h3>
       <TimerTwo />
-      <hr />
-      
+      <hr /> */}
       
       <TimerReactExampleOne />
 
@@ -47,6 +47,10 @@ export default function App() {
 
       <h3>State 事件處理</h3>
       <Person />
+      <hr/>
+
+      <h3>UpdateTime 點擊按鈕更新時間</h3>
+      <UpdateTime />
 
     </div>
   );

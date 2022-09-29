@@ -5,6 +5,7 @@ const TimerTwo = () => {
     date: new Date()
   });
 
+
   useEffect(() => {
     updateTimer();
   });

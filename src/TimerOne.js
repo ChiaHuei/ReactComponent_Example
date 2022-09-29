@@ -5,8 +5,10 @@ class TimerOne extends Component {
   state = {
     date: new Date()
   };
-  // componentDidUpdate() 是在 state 被修改時會執行的函式，所以 state 每次被修改都會再執行 this.updateTimer()
 
+
+  // componentDidMount() 是在 state 被修改時 ( 當元件要被顯示到 DOM 後) 會執行的函式
+  // 所以 state 每次被修改都會再執行 this.updateTimer()
   componentDidMount() {
     this.updateTimer();
   }
